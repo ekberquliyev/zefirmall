@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="az"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+<title>Kampaniyalar</title>
+<meta name="description" content="Category">
+<link rel="canonical" href="http://zefir-mall.az/az/category/promotions">
+<meta name="robots" content="index,follow">
+<link href="{% static 'zefir_asserts/css/styles.css' %}" rel="stylesheet" />
+<meta property="og:site_name" content="">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kampaniyalar">
+<meta property="og:description" content="Category">
+<meta property="og:image" content="">
+<meta property="og:url" content="http://zefir-mall.az/az/category/promotions">
+<meta property="og:locale" content="">
+<meta property="og:video" content="">
+<meta property="og:locale:alternate" content="">
+<meta property="fb:app_id" content="">
+<meta name="twitter:card" content="summary-large-image">
+<meta name="twitter:title" content="Kampaniyalar">
+<meta name="twitter:description" content="Category">
+<meta name="twitter:image" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{% static 'zefir_asserts/assets/image/zefir_logo.webp' %}">
+    <link rel="stylesheet" href="{% static 'zefir_asserts/css/11f34eb389a61de0071363194bc6dd08-1642015655' %}" type="text/css">
+    </head>
+<body>
+    <div class="wrapper">
+        <div class="mob_ov"></div>
+<div id="mobile-menu">
+    <div class="mobile_block">
+        <div class="close_mobile">X</div>
+        <div class="lang">
+    <div class="lang_list">
+        <p class="lang_item">
+            <span>AZ</span>
+            <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 5.83333L0 0L7 5.88858e-07L3.5 5.83333Z" fill="#352A55"></path>
+            </svg>
+        </p>
+        <div class="lang_select">
+                            <a class="lang_item" href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'">EN</a>
+                            <a class="lang_item" href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'">RU</a>
+                    </div>
+    </div>
+</div>        <form class="search_mob" action="http://zefir-mall.az/az/search?q=" method="get">
+            <input id="search" name="q" type="search" placeholder="Axtar..." autocomplete="off">
+            <button type="submit">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7164 14.7878L11.8524 10.769C12.8459 9.58796 13.3903 8.10197 13.3903 6.55499C13.3903 2.94063 10.4496 0 6.83527 0C3.2209 0 0.280273 2.94063 0.280273 6.55499C0.280273 10.1694 3.2209 13.11 6.83527 13.11C8.19215 13.11 9.48519 12.7007 10.5907 11.9238L14.4841 15.9731C14.6468 16.1421 14.8657 16.2353 15.1003 16.2353C15.3223 16.2353 15.5329 16.1507 15.6928 15.9967C16.0325 15.6699 16.0433 15.1278 15.7164 14.7878ZM6.83527 1.71C9.50685 1.71 11.6803 3.88341 11.6803 6.55499C11.6803 9.22658 9.50685 11.4 6.83527 11.4C4.16368 11.4 1.99027 9.22658 1.99027 6.55499C1.99027 3.88341 4.16368 1.71 6.83527 1.71Z" fill="#9C9C9C"></path>
+                </svg>
+            </button>
+        </form>
+        <nav>
+            <ul>
+            {%for x in navbar_queryset%}
+ 
+            <li role="presentation" class="  ">
+                    <a href="https://zefir-mall.az/az/haqqimizda">
+                {{ x.name  }}
+            </a>
+        
+            </li>
+            {%endfor%}
+            </ul>
+        </nav>
+    </div>
+</div>
+<header>
+    <div class="container">
+        <div class="header_block">
+            <a href="http://localhost:8000/" class="logo"><img src="{% static 'zefir_asserts/assets/image/zefir_logo.webp' %}" alt=""></a>
+            <nav>
+                <ul>
+                    {%for x in navbar_queryset%}
+
+                    <li role="presentation" class="  ">
+                            <a href="{{x.link}}">
+                        {{ x.name  }}
+                    </a>
+                
+                    </li>
+                    {%endfor%}
+                </ul>
+        </nav>
+            <div class="options">
+                <div class="search">
+                    <button class="md-trigger" data-modal="modal-3">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.425 16.3951L13.141 11.9395C14.2425 10.6301 14.846 8.98262 14.846 7.26749C14.846 3.26026 11.5858 0 7.57853 0C3.5713 0 0.311035 3.26026 0.311035 7.26749C0.311035 11.2747 3.5713 14.535 7.57853 14.535C9.0829 14.535 10.5165 14.0812 11.7422 13.2199L16.0587 17.7093C16.2392 17.8967 16.4818 18 16.7419 18C16.988 18 17.2215 17.9062 17.3988 17.7355C17.7754 17.3731 17.7875 16.7721 17.425 16.3951ZM7.57853 1.89587C10.5405 1.89587 12.9502 4.30552 12.9502 7.26749C12.9502 10.2295 10.5405 12.6391 7.57853 12.6391C4.61655 12.6391 2.2069 10.2295 2.2069 7.26749C2.2069 4.30552 4.61655 1.89587 7.57853 1.89587Z" fill="#352A55"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="lang">
+    <div class="lang_list">
+        <p class="lang_item">
+            <span>AZ</span>
+            <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 5.83333L0 0L7 5.88858e-07L3.5 5.83333Z" fill="#352A55"></path>
+            </svg>
+        </p>
+        <div class="lang_select">
+                            <a class="lang_item" href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'">EN</a>
+                            <a class="lang_item" href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'">RU</a>
+                    </div>
+    </div>
+</div>            </div>
+            <button id="burger-menu">
+                <span class="box box_item1"></span>
+                <span class="box box_item2"></span>
+                <span class="box box_item3"></span>
+            </button>
+        </div>
+    </div>
+</header>                    <section class="shop">
+    <div class="container">
+        <div class="shop_block">
+                <ul class="breadcrumb">
+        <li><a href="http://zefir-mall.az/">“Zefir Mall” ticarət mərkəzi</a></li>
+        <li>
+            <a href="">Kampaniyalar</a>
+        </li>
+    </ul>
+    <h1>Kampaniyalar</h1>
+            <div class="promo_box">
+                {%for x in company_queryset%}
+                            <a href="http://zefir-mall.az/az/post/promotions/aloe-aptekler-sebekesinde-1-10-mart-tarixlerinde-endirimler-var" class="promo_item _anim-items _anim_no _active">
+                    <div class="promo_photo">
+                                                    <img src="{{x.company_photo.url}}" alt="">
+                                            </div>
+                    <div class="promo_text">
+                        <p class="name">{{x.company_name}}</p>
+                                                <span>Daha ətraflı</span>
+                    </div>
+                </a>
+                {%endfor%}
+                            <!-- <a href="http://zefir-mall.az/az/post/promotions/1-12-fevral-kartof-fri-hediyye" class="promo_item _anim-items _anim_no _active">
+                    <div class="promo_photo">
+                                                    <img src="kampaniyalar_files/img_74de901ecab11b54a2185e92399af435_0_800_0_0_auto.jpg" alt="ferma.jpg">
+                                            </div>
+                    <div class="promo_text">
+                        <p class="name">Fermadan 1-12 fevral kartof fri hədiyye !</p>
+                                                <span>Daha ətraflı</span>
+                    </div>
+                </a>
+                            <a href="http://zefir-mall.az/az/post/promotions/eli-ve-nino-da-her-ikinci-kitaba-40-endirim" class="promo_item _anim-items _anim_no _active">
+                    <div class="promo_photo">
+                                                    <img src="kampaniyalar_files/img_e1ef46a664415b48ffae6894adcb7bce_0_800_0_0_auto.png" alt="2+.png">
+                                            </div>
+                    <div class="promo_text">
+                        <p class="name">"Əli və Nino" da hər ikinci kitaba 40% endirim!</p>
+                                                <span>Daha ətraflı</span>
+                    </div>
+                </a>
+                            <a href="http://zefir-mall.az/az/post/promotions/supermanat-kampaniyasi" class="promo_item _anim-items _anim_no _active">
+                    <div class="promo_photo">
+                                                    <img src="kampaniyalar_files/img_5c22ed84ab0274d5dac9c1b9f12402e2_0_800_0_0_auto.jpg" alt="supermanat2022-01.jpg">
+                                            </div>
+                    <div class="promo_text">
+                        <p class="name">“Supermanat” günləri</p>
+                                                <span>Daha ətraflı</span>
+                    </div>
+                </a>
+                            <a href="http://zefir-mall.az/az/post/promotions/aloe-aptekinden-30-endirim" class="promo_item _anim-items _anim_no _active">
+                    <div class="promo_photo">
+                                                    <img src="kampaniyalar_files/img_a942dcb3e142a3f2892ada97f92f92e6_0_800_0_0_auto.jpg" alt="CC Glow update.jpg">
+                                            </div>
+                    <div class="promo_text">
+                        <p class="name">Aloe+ aptekindən 30% endirim</p>
+                                                <span>Daha ətraflı</span>
+                    </div>
+                </a>
+                            <a href="http://zefir-mall.az/az/post/promotions/ali-nino-50-endirim" class="promo_item _anim-items _anim_no _active">
+                    <div class="promo_photo">
+                                                    <img src="kampaniyalar_files/img_e94493d000531c837dba5102e5607760_0_800_0_0_auto.jpg" alt="271662239_210443481296242_1730695994652834994_n.jpg">
+                                            </div>
+                    <div class="promo_text">
+                        <p class="name">"Ali &amp; Nino" 50% endirim !</p>
+                        <p class="desc">Bütün yeni il məhsullarına 50% endirim !</p>                        <span>Daha ətraflı</span>
+                    </div>
+                </a>
+                            <a href="http://zefir-mall.az/az/post/promotions/bravo-da-hediyyeli-gunler" class="promo_item _anim-items _anim_no _active">
+                    <div class="promo_photo">
+                                                    <img src="kampaniyalar_files/img_d34b7aeda58a4bba34121943a2fddd2b_0_800_0_0_auto.jpg" alt="hediyyeli-leaflet-11.jpg">
+                                            </div>
+                    <div class="promo_text">
+                        <p class="name">Bravo-da "Hədiyyəli Günlər"</p>
+                        <p class="desc">Bravo-da seçilmiş məhsullara sevindirici təkliflər!</p>                        <span>Daha ətraflı</span>
+                    </div>
+                </a> -->
+                    </div>
+                </div>
+    </div>
+</section>                
+<footer>
+    <div class="container">
+        <div class="footer_block">
+            <a href="http://127.0.0.1:8000/" class="footer_logo"><img src="{% static 'zefir_asserts/assets/zefir_logo.webp' %}" alt=""></a>
+            <div class="footer_box">
+                <div class="f_column">
+                    <div class="f_info">
+                        <span class="text">Baku, Mashtaga</span>
+                        <p class="border">İş saatları</p>
+                        <span class="date">10:00 - 22:00</span>
+                        <a href="tel:*0708" class="num">*5775</a>
+                        <p class="copy" data-da=".copy_box,770,0">© Akhbar Copyright 2021. All rights reserved.</p>
+                    </div>
+                </div>
+
+                <div class="f_column">
+                        <ul>
+                            <nav>
+                                <ul>
+                                    {%for x in navbar_queryset%}
+             
+                                    <li role="presentation" class="  ">
+                                            <a href="{{x.link}}">
+                                        {{ x.name  }}
+                                    </a>
+                                
+                                    </li>
+                                    {%endfor%}
+                                </ul>
+                        </nav>
+                </div>
+
+                <div class="f_column">
+                    <div class="f_btn">
+                        <a class="small" href="http://localhost:8000/rent">İcarə</a>
+                        <button class="sug md-trigger" data-modal="modal-2">Təkliflər</button>
+                    </div>
+                    <div data-da=".footer_copy,770,1" class="f_social">
+                                                    <a href="https://www.facebook.com/profile.php?id=100040778856606">
+                                <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M16.6636 4.23844H18.9459V0.263444C18.5521 0.209277 17.198 0.0874023 15.6209 0.0874023C12.3302 0.0874023 10.0761 2.15719 10.0761 5.96136V9.4624H6.44482V13.9062H10.0761V25.0874H14.5282V13.9072H18.0125L18.5657 9.46344H14.5271V6.40199C14.5282 5.11761 14.874 4.23844 16.6636 4.23844Z" fill="#352A55"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="25" height="25" fill="white" transform="translate(0 0.0874023)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                                                                            <a href="https://www.instagram.com/akhbaaarrr/">
+                                <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M12.5044 6.16846C8.95963 6.16846 6.08984 9.04137 6.08984 12.583C6.08984 16.1278 8.96276 18.9976 12.5044 18.9976C16.0492 18.9976 18.919 16.1247 18.919 12.583C18.919 9.03825 16.0461 6.16846 12.5044 6.16846ZM12.5044 16.7466C10.2034 16.7466 8.34089 14.883 8.34089 12.583C8.34089 10.283 10.2044 8.4195 12.5044 8.4195C14.8044 8.4195 16.668 10.283 16.668 12.583C16.669 14.883 14.8055 16.7466 12.5044 16.7466Z" fill="#352A55"></path>
+                                        <path d="M17.6544 0.166418C15.3544 0.0591267 9.65753 0.0643351 7.35544 0.166418C5.33253 0.26121 3.54815 0.749752 2.10961 2.18829C-0.294555 4.59246 0.0127367 7.83204 0.0127367 12.5831C0.0127367 17.4456 -0.258097 20.6102 2.10961 22.9779C4.52315 25.3904 7.80961 25.0748 12.5044 25.0748C17.3211 25.0748 18.9836 25.0779 20.6867 24.4185C23.0023 23.5195 24.7502 21.4497 24.9211 17.732C25.0294 15.431 25.0232 9.73517 24.9211 7.43308C24.7148 3.04454 22.3596 0.383085 17.6544 0.166418ZM21.295 21.3873C19.719 22.9633 17.5325 22.8227 12.4742 22.8227C7.26586 22.8227 5.17732 22.8997 3.65336 21.3716C1.89815 19.6248 2.21586 16.8195 2.21586 12.5664C2.21586 6.81121 1.62524 2.66642 7.40128 2.37058C8.72836 2.32371 9.11899 2.30808 12.4596 2.30808L12.5065 2.33933C18.0575 2.33933 22.4127 1.75808 22.6742 7.53308C22.7336 8.85079 22.7471 9.24663 22.7471 12.582C22.7461 17.73 22.844 19.831 21.295 21.3873Z" fill="#352A55"></path>
+                                        <path d="M19.1728 7.41441C20.0006 7.41441 20.6717 6.74331 20.6717 5.91546C20.6717 5.08761 20.0006 4.4165 19.1728 4.4165C18.3449 4.4165 17.6738 5.08761 17.6738 5.91546C17.6738 6.74331 18.3449 7.41441 19.1728 7.41441Z" fill="#352A55"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="25" height="25" fill="white" transform="translate(0 0.0874023)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                                                                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">
+                <div class="copy_box"></div>
+            </div>
+        </div>
+    </div>
+</footer>    
+</div>
+
+    
+
+<div class="md-modal ent md-effect-1" id="modal-2">
+    <div class="md-content suggestion">
+        <button class="md-close" type="button">x</button>
+        <form id="suggestionsForm_form" data-request="suggestionsForm::onFormSubmit" data-request-error="$('#suggestionsForm_form').addClass('error')" data-request-success="$('#suggestionsForm_form').addClass('find')" data-request-validate="">
+    <input name="_token" type="hidden" value="qcFlZBoIgsIrULWvtpSmaDPGz9HskEO6NaeQ3Ugv">
+
+    <div class="m_info">
+        <div class="title">Təkliflər</div>
+        <div class="inp_box">
+            <input type="text" name="name" placeholder="Adınız" required="">
+            <p data-validate-for="name">You entered a too short name</p>
+        </div>
+        <div class="inp_box">
+            <input class="phone" type="tel" name="phone" placeholder="Sizin telefon nömrəniz" required="">
+            <p data-validate-for="phone">You entered an invalid phone number</p>
+        </div>
+        <div class="inp_box">
+            <input type="email" name="email" placeholder="E-poçtunuz" required="">
+            <p data-validate-for="email">You entered an invalid email</p>
+        </div>
+    </div>
+    <div class="m_mess">
+        <div class="textareabox">
+            <textarea name="message" placeholder="Ticarət mərkəzinin xidmət səviyyəsinin yaxşılaşdırılması ilə əlaqədar təklifləriniz olarsa, onları burada qeyd edə bilərsiniz. Təklifləriniz nəzərə alınacaqdır." required=""></textarea>
+            <div class="sub_title">İsmarıc</div>
+        </div>
+        <p data-validate-for="message"></p>
+        <div class="rowbtn">
+            <button type="submit" class="send send-form">İsmarıcı göndərin</button>
+            <div class="status_text" id="suggestionsForm_forms_flash"></div>
+        </div>
+    </div>
+</form>    </div>
+</div>
+
+<div class="md-modal search md-effect-7" id="modal-3">
+    <div class="md-content search">
+        <form class="search-form" action="http://zefir-mall.az/az/search?q=" method="get">
+    <div class="search_block">
+        <button type="submit" class="search_button">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.4245 16.3951L13.1405 11.9395C14.242 10.6301 14.8455 8.98262 14.8455 7.26749C14.8455 3.26026 11.5853 0 7.57804 0C3.57081 0 0.310547 3.26026 0.310547 7.26749C0.310547 11.2747 3.57081 14.535 7.57804 14.535C9.08241 14.535 10.516 14.0812 11.7417 13.2199L16.0583 17.7093C16.2387 17.8967 16.4813 18 16.7414 18C16.9875 18 17.2211 17.9062 17.3983 17.7355C17.775 17.3731 17.787 16.7721 17.4245 16.3951ZM7.57804 1.89587C10.54 1.89587 12.9497 4.30552 12.9497 7.26749C12.9497 10.2295 10.54 12.6391 7.57804 12.6391C4.61606 12.6391 2.20641 10.2295 2.20641 7.26749C2.20641 4.30552 4.61606 1.89587 7.57804 1.89587Z" fill="#352A55"></path>
+            </svg>
+        </button>
+        <input id="search" name="q" type="search" placeholder="Axtar..." class="input_search" autocomplete="off" data-track-input="" data-request="searchInput::onType" data-request-update="'searchInput::autocomplete': '#autocomplete-results'">
+        <button class="md-close search_close" type="button">x</button>
+    </div>
+    <div id="autocomplete-results" class="suggest_block"></div>
+</form>    </div>
+</div>
+
+<div class="md-overlay"></div>    <div class="cookies_content">
+    <p class="ck_tit">Bu vebsayt kukilərdən istifadə edir</p>
+    <p class="ck_txt">Bu vebsayt daha yaxşı istifadəçi təcrübəsini təmin
+ etmək üçün kukilərdən istifadə edir. Ətraflı məlumat üçün 
+Konfidensiallıq Siyasəti ilə tanış ola bilərsiniz.</p>
+    <button id="cookie_close" class="ck_bt">Razılaşmaq</button>
+</div>    <script src="kampaniyalar_files/b2edde7ddaab9dbd80d14ed92c269537-1641730786.js"></script>
+    <script src="kampaniyalar_files/inline-errors.js"></script>
+<script src="kampaniyalar_files/970bfbd94e247c6bf9a3799ff452e1d0-1641730786.js"></script>
+<div class="stripe-loading-indicator loaded"><div class="stripe"></div><div class="stripe-loaded"></div></div></body></html>
